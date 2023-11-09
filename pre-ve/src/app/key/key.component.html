@@ -1,0 +1,6 @@
+<button  (click)="cerca()">cerca</button>
+<div *ngFor="let z of x">
+    {{z.id}}
+    <a routerLink="/vedi/{{vai(z.file_url)}}">{{z.id}}</a><br>
+    {{z.file_url}}
+</div>
