@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import {   Root2 } from './models';
+import {   Root2 , MediaAsset} from './models';
 
 @Injectable({
   providedIn: 'root'
@@ -17,4 +17,10 @@ export class KeysService {
     let obsprod = this.http.get<Root2>(url);
     return obsprod;
   }
+  getProk(id:string|null){
+    const url = `https://danbooru.donmai.us/posts`
+    let obsprod = this.http.get<Root2>(url);
+    return obsprod;
+  }
 }
+

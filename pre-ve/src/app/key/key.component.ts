@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { Observable } from 'rxjs';
-import {  Root2 } from '../models';
+import {  MediaAsset, Root2, Variant } from '../models';
 import { KeysService } from '../keys.service';
 
 @Component({
@@ -11,7 +11,7 @@ import { KeysService } from '../keys.service';
 })
 export class KeyComponent {
   obs!: Observable<Root2> 
-  x!: any
+  x !: any
   constructor(private keys:KeysService){
   }
 
